@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Returns</title>
+</head>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=" stylesheet" type="text/css" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- block_element--modifier -->
+    <header>
+        <div class="header__logo-container">
+            <img class="header__logo-image" src="./resources/scarab11.gif">
+            
+        </div>
+        <nav>
+            <a href="index.html" class="nav__link--inactive">Home</a>
+            <a href="about.html" class="nav__link--inactive">Atlantis</a>
+            <a href="lumeria.html" class="nav__link--inactive">Lumeria</a>
+            <a href="signIn.html" class="nav__link--active">Sign-In</a>
+        </nav>
+    </header>
+    
+
+    <main>
+        <section class="main__splash-signin">
+            <div class="splash__text-box">
+              
+              
+              
+                <div id="returns"></div>   
+                <a href="/">Home</a> 
+                <script>
+                    const returnsList = document.getElementById('returns');
+                    new URLSearchParams(window.location.search).forEach((value, name) => {
+                            console.log(value);
+                            console.log(name);
+            
+                    returnsList.append(`${name}: ${value}`);
+                    returnsList.append(document.createElement('br'));
+                    });
+                </script>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+    <footer>
+        <div class="footer__content">
+            <section class="footer__content-section">
+                <h2 class="footer_title">Esoteric</h2>
+                <p class="footer__about"> ORIGIN OF ESOTERIC 
+                    From Ancient Greek ἐσωτερικός (esōterikos, “belonging to an inner circle”), from ἐσωτέρω (esōterō, “further inside”), comparative of ἔσω (esō, “within”), from ἐς (es), εἰς (eis, “into”) (esoteric originally referred to the secret teachings of Greek philosophers, versus public or exoteric ones).</p>
+            </section>
+            <section class="footer__content-section">
+                <h2 class="footer_title">Watch videos here....</h2>
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=_iih05QEvoM">History of Atlantis</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=PQ7UEQhcXxI">History of Lumeria</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=XT1nwStnJPo">Learn more about Esoteric knowledge</a></li>
+                </ul>
+            </section>
+
+            <img class="footer__image" src="./resources/burnpyramid.gif">
+
+            <section class="footer__content-section">
+                <h2 class="footer_title">Subscribe</h2>
+                <p class="footer__about">Click here ---><button >Subscribe</button></p>
+            </section>
+            <section class="footer__content-section">
+                <h2>Contact us</h2>
+                <p><a>victor@redapple.ai</a></p>
+            </section>
+        </div>
+        
+    </footer>
+</body>
+</html>
+    
+

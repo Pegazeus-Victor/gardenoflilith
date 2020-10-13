@@ -1,0 +1,355 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url('./resources/egyptian1.jpeg');
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    align-items: center;
+}
+
+.header__logo-image {
+    width: 100px;
+    
+}
+
+header a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    text-align: center;
+    padding: 3vw;
+    color: #FFD131;
+}
+
+head a:hover {
+    color: white;
+    margin: 10%;
+}
+
+main {
+    background-color: gold;
+    margin: 0 10%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+}
+
+.main__splash {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url('./resources/pyramid1.jpg');
+    background-size: cover;
+}
+
+.main__splash--about {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url('./resources/atlatis22.png');
+    background-size: cover;
+}
+
+.main__splash--lumeria {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url('./resources/lumeria.png');
+    background-size: cover;
+}
+
+.main__splash-signin {
+    background-position: center;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url('./resources/anubis22.jpg');
+    background-size: cover;
+}
+
+.main__splash:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+.splash__text-box {
+    position: relative;
+    z-index: 1;
+    background:rgba(49, 226, 33, 0.3);
+    padding: 1vh 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.splash__text-box-home {
+    position: relative;
+    background: rgba(255,223,0,0.5);
+    z-index: 1;
+    padding: 1vh 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.splash__header-home {
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 5vw;
+    font-weight: 700;
+}
+.splash__sub-header-home {
+    color: rgba(0, 230, 64, 1);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2vw;
+    font-weight: bold 300;
+}
+.splash__header-lumeria {
+    color: rgb(201, 245, 80);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 5vw;
+    font-weight: 700;
+}
+
+
+.splash__sub-header-lumeria {
+    color: rgb(8, 8, 8);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1vw;
+    font-weight: bold 300;
+}
+
+
+.body-a {
+    color: gold;
+
+}
+
+.submit-a {
+  position: relative;
+  top: 5px;
+  left: 220px;
+}
+.splash__header {
+    color: blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 5vw;
+    font-weight: 700;
+}
+
+.splash__sub-header {
+    color: black;
+}
+
+.submit-a {
+  position: relative;
+  top: 5px;
+  left: 220px;
+}
+.splash__header {
+    color: blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 5vw;
+    font-weight: 700;
+}
+
+.splash__sub-header {
+    color: black;
+}
+
+.submit-a {
+  position: relative;
+  top: 5px;
+  left: 220px;
+}
+.splash__header {
+    color: blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 5vw;
+    font-weight: 700;
+}
+
+.splash__sub-header {
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1vw;
+    font-weight: bold 300;
+}
+
+.nav__link--active {
+    color: gold;
+}
+
+.nav__link--inactive {
+    color: #31cb00;
+}
+
+.alternating-content-container__alternating-content {
+    display: flex;
+    background-color: black;
+}
+
+.alternating-content__image {
+    width: 50% ;
+}
+
+.alternating-content__image img {
+    width: "" ;
+    font-size: 0;
+}
+
+.alternating-content__text {
+    width: 50%;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.alternating-content__text {
+    color: gold;
+}
+
+.main__card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    border: 1px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 70%;
+    min-height: 100%;
+    align-items: center;
+    margin: 8px;
+    padding: 1vw;
+    border-radius: 18px;
+}
+
+.card img {
+    width: 90%;
+    height: 28 vh;
+    object-fit: cover;
+    margin: 8px 0;
+
+}
+
+.card__title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card--light {
+    background-color: #05668d;
+    color: black;
+}
+
+.card--dark {
+    background-color: #31cb00;
+    color: black;
+}
+
+
+footer {
+    background-color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+}
+
+footer a {
+    text-decoration: none;
+    color: gold;
+    font-weight: 500;
+}
+
+.footer__about {
+    color: gold
+}
+.footer__content {
+    color: gold;
+    display: flex; 
+    padding: 3vh;
+    justify-content: center;    
+}
+
+.footer__content-section {
+    width: 22%;
+    padding: 2%;
+}
+
+.footer__content-section ul {
+    list-style: none;
+}
+
+.footer__content-section button {
+    background-color: #db1818;
+    color: rgb(229, 253, 16);
+    padding: 8px;
+    border-radius: 8px;
+}
+.footer_title {
+    color: #31cb00;
+}
+
+.footer__image {
+    width: 200px;
+}
+
+.footer__copy-right {
+    display: flex;
+    justify-content: center;
+}
+
+.button-color {
+    background-color: green
+}
+
+@media screen and (max-width: 800px) {
+    .main__card-container {
+        flex-direction: column;
+    }
+
+    .footer__content {
+        flex-direction: column;
+    }
+
+    .footer_content-section {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1090px) {
+    .alternating-content-container__alternating-content {
+        flex-direction: column;
+    }
+
+    .alternating-content__image {
+        width: 100%;
+    }
+    .alternating-content__text {
+        width: 100%;
+        order: 2;
+    }
+}
